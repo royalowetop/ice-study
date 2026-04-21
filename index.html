@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ice Study — study until the ice melts</title>
+<meta name="description" content="A calm, visual study timer. Focus until the cup of ice melts." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%8A%3C/text%3E%3C/svg%3E" />
+<style>
+  :root {
+    --bg: #0B1220;
+    --bg-elev: #121B2E;
+    --text: #F1F5FB;
+    --muted: #8899B2;
+    --primary: #8EC5FF;
+    --border: rgba(255,255,255,0.08);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #F2F7FF;
+      --bg-elev: #FFFFFF;
+      --text: #0B1220;
+      --muted: #5E7291;
+      --primary: #2F80ED;
+      --border: rgba(13,29,56,0.08);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", Segoe UI, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: radial-gradient(ellipse at top, rgba(142,197,255,0.15), transparent 60%), var(--bg);
+    min-height: 100vh;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 80px 24px 120px;
+  }
+  .logo {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 44px;
+    line-height: 1.1;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .tag { color: var(--muted); margin: 0 0 40px; }
+  .card {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+    margin: 16px 0;
+  }
+  h2 { margin: 0 0 8px; font-size: 20px; }
+  p { color: var(--muted); margin: 0; }
+  .links {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a:hover { text-decoration: underline; }
+  footer {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 60px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo">🧊</div>
+  <h1>Ice Study</h1>
+  <p class="tag">Study until the ice melts.</p>
+
+  <div class="card">
+    <h2>A calm visual focus timer.</h2>
+    <p>Pick a duration, start studying, and watch a real cup of ice melt in real time. No bars, no numbers — just ice becoming water.</p>
+  </div>
+
+  <div class="links">
+    <a href="/ice-study/privacy.html">Privacy policy →</a>
+    <a href="mailto:hello@icestudy.app">Contact support →</a>
+  </div>
+
+  <footer>© 2026 Ice Study</footer>
+</main>
+</body>
+</html>
